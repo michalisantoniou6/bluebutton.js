@@ -45,8 +45,8 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "xmldom": "~0.1.19",
-    "ejs": "^1.0.0"
+    "ejs": "^1.0.0",
+    "xmldom": "^0.1.22"
   },
   "devDependencies": {
     "bower": "*",
@@ -67,5 +67,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "licenses": ["MIT"]
+  "licenses": [
+    "MIT"
+  ]
 }
