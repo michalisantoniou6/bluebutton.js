@@ -1,12 +1,18 @@
 {
+  "type": "c32",
   "document": {
-    "date": "2009-11-10T13:09:45Z",
+    "custodian": {
+      "name": "NIST Registry"
+    },
+    "date": "2009-11-10T13:09:45.000Z",
     "title": "Example Healthcare Record",
     "author": {
+      "npi": null,
       "name": {
         "prefix": null,
         "given": [],
-        "family": "Auto Generated"
+        "family": "Auto Generated",
+        "suffix": null
       },
       "address": {
         "street": [],
@@ -15,20 +21,30 @@
         "zip": null,
         "country": null
       },
-      "phone": {
-        "work": "tel:+1-301-975-3251"
-      }
+      "phones": [
+        {
+          "type": null,
+          "number": "tel:+1-301-975-3251"
+        }
+      ]
     },
     "documentation_of": [
       {
+        "npi": "PseudoMD-1",
         "name": {
           "prefix": "Dr.",
-          "given": ["Pseudo"],
-          "family": "Physician-1"
+          "given": [
+            "Pseudo"
+          ],
+          "family": "Physician-1",
+          "suffix": null
         },
-        "phone": {
-          "work": "tel:+1-301-975-3251"
-        },
+        "phones": [
+          {
+            "type": "home",
+            "number": "tel:+1-301-975-3251"
+          }
+        ],
         "address": {
           "street": [],
           "city": null,
@@ -38,14 +54,21 @@
         }
       },
       {
+        "npi": "PseudoMD-3",
         "name": {
           "prefix": "Dr.",
-          "given": ["Pseudo"],
-          "family": "Physician-3"
+          "given": [
+            "Pseudo"
+          ],
+          "family": "Physician-3",
+          "suffix": null
         },
-        "phone": {
-          "work": "tel:+1-301-975-3251"
-        },
+        "phones": [
+          {
+            "type": "home",
+            "number": "tel:+1-301-975-3251"
+          }
+        ],
         "address": {
           "street": [],
           "city": null,
@@ -55,6 +78,28 @@
         }
       }
     ],
+    "legal_authenticator": {
+      "date": null,
+      "ids": [],
+      "assigned_person": {
+        "prefix": null,
+        "given": [],
+        "family": null,
+        "suffix": null
+      },
+      "representedOrganization": {
+        "ids": [],
+        "name": null,
+        "phones": [],
+        "address": {
+          "street": [],
+          "city": null,
+          "state": null,
+          "zip": null,
+          "country": null
+        }
+      }
+    },
     "location": {
       "name": null,
       "address": {
@@ -167,10 +212,12 @@
         "FirstName",
         "MiddleName"
       ],
-      "family": "LastName"
+      "family": "LastName",
+      "suffix": null
     },
-    "dob": "07/04/1984",
+    "dob": "1984-07-04T00:00:00.000Z",
     "gender": "female",
+    "mrn_number": "PatientID",
     "marital_status": "single",
     "address": {
       "street": [
@@ -181,11 +228,12 @@
       "zip": "20899",
       "country": null
     },
-    "phone": {
-      "home": "tel:1-301-555-5555",
-      "work": null,
-      "mobile": null
-    },
+    "phones": [
+      {
+        "type": "home",
+        "number": "tel:1-301-555-5555"
+      }
+    ],
     "email": null,
     "language": "en-US",
     "race": null,
@@ -214,9 +262,33 @@
         "home": null
       }
     },
+    "patient_contacts": [
+      {
+        "relationship": "next of kin",
+        "relationship_code": {
+          "code": "NOTCHECKED",
+          "displayName": "Mother"
+        },
+        "phones": [
+          {
+            "type": null,
+            "number": "tel:+1-301-555-5555"
+          }
+        ],
+        "name": {
+          "prefix": null,
+          "given": [
+            "Patients"
+          ],
+          "family": "Mother",
+          "suffix": null
+        }
+      }
+    ],
     "provider": {
+      "ids": [],
       "organization": null,
-      "phone": null,
+      "phones": [],
       "address": {
         "street": [],
         "city": null,
@@ -228,7 +300,7 @@
   },
   "encounters": [
     {
-      "date": "04/07/2000",
+      "date": "2000-04-07T00:00:00.000Z",
       "name": "Office consultation - 15 minutes",
       "code": "99241",
       "code_system": "2.16.840.1.113883.6.12",
@@ -242,25 +314,32 @@
         "code_system_name": "HL7 ActEncounterCode"
       },
       "performer": {
+        "ids": [
+          {
+            "extension": null,
+            "root": null,
+            "assigningAuthorityName": null
+          }
+        ],
         "name": "Performer Name",
         "code": null,
         "code_system": null,
         "code_system_name": null
       },
       "location": {
-        "organization": "Good Health Clinic",
         "street": [],
         "city": null,
         "state": null,
         "zip": null,
-        "country": null
+        "country": null,
+        "organization": "Good Health Clinic"
       }
     }
   ],
   "functional_statuses": [],
   "immunizations": [
     {
-      "date": "11/01/1999",
+      "date": "1999-11-01T00:00:00.000Z",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -293,7 +372,7 @@
       }
     },
     {
-      "date": "12/15/1998",
+      "date": "1998-12-15T00:00:00.000Z",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -326,7 +405,7 @@
       }
     },
     {
-      "date": "12/15/1998",
+      "date": "1998-12-15T00:00:00.000Z",
       "product": {
         "name": "Pneumococcal polysaccharide vaccine",
         "code": "33",
@@ -359,41 +438,6 @@
       }
     }
   ],
-  "immunization_declines": [
-    {
-      "date": "08/15/1997",
-      "product": {
-        "name": "Tetanus and diphtheria toxoids",
-        "code": "09",
-        "code_system": "2.16.840.1.113883.6.59",
-        "code_system_name": "CVX",
-        "translation": {
-          "name": "Tetanus and diphtheria toxoids - preservative free",
-          "code": "113",
-          "code_system": "2.16.840.1.113883.6.59",
-          "code_system_name": "CVX"
-        },
-        "lot_number": "Required-if-Known text to identifyor describe the Immunization Lot Number.",
-        "manufacturer_name": null
-      },
-      "dose_quantity": {
-        "value": null,
-        "unit": null
-      },
-      "route": {
-        "name": "Intramuscular injection",
-        "code": "IM",
-        "code_system": "2.16.840.1.113883.5.112",
-        "code_system_name": "RouteOfAdministration"
-      },
-      "instructions": null,
-      "education_type": {
-        "name": null,
-        "code": null,
-        "code_system": null
-      }
-    }
-  ],
   "instructions": [],
   "results": [
     {
@@ -401,10 +445,10 @@
       "code": "43789009",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": null,
-      "date": "2000-03-23T14:30:00Z",
+      "date": "2000-03-23T14:30:00.000Z",
       "tests": [
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "HGB",
           "value": 13.2,
           "unit": "g/dl",
@@ -412,10 +456,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": "M 13-18 g/dl; F 12-16 g/dl",
@@ -426,7 +470,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "WBC",
           "value": 6.7,
           "unit": "10+3/ul",
@@ -434,10 +478,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -448,7 +492,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "PLT",
           "value": 123,
           "unit": "10+3/ul",
@@ -456,10 +500,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -476,10 +520,10 @@
       "code": "20109005",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED CT",
-      "date": "2000-04-06T13:00:00Z",
+      "date": "2000-04-06T13:00:00.000Z",
       "tests": [
         {
-          "date": "2000-04-06T13:00:00Z",
+          "date": "2000-04-06T13:00:00.000Z",
           "name": "NA",
           "value": 140,
           "unit": "meq/l",
@@ -487,10 +531,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -501,7 +545,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00Z",
+          "date": "2000-04-06T13:00:00.000Z",
           "name": "K",
           "value": 4,
           "unit": "meq/l",
@@ -509,10 +553,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -523,7 +567,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00Z",
+          "date": "2000-04-06T13:00:00.000Z",
           "name": "CL",
           "value": 102,
           "unit": "meq/l",
@@ -531,10 +575,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -545,7 +589,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00Z",
+          "date": "2000-04-06T13:00:00.000Z",
           "name": "HCO3",
           "value": 35,
           "unit": "meq/l",
@@ -553,10 +597,10 @@
           "code_system": "2.16.840.1.113883.6.1",
           "code_system_name": null,
           "translation": {
-            "name" : null, 
-            "code" : null,
-            "code_system" : null,
-            "code_system_name" : null 
+            "name": null,
+            "code": null,
+            "code_system": null,
+            "code_system_name": null
           },
           "reference_range": {
             "text": null,
@@ -571,10 +615,14 @@
   ],
   "medications": [
     {
+      "reference": null,
+      "reference_title": null,
+      "reference_sig": null,
       "date_range": {
-        "start": "01/01/2005",
+        "start": "2005-01-01T00:00:00.000Z",
         "end": null
       },
+      "status": "Active",
       "text": null,
       "product": {
         "name": "Albuterol 0.09 MG/ACTUAT inhalant solution",
@@ -635,10 +683,14 @@
       }
     },
     {
+      "reference": null,
+      "reference_title": null,
+      "reference_sig": null,
       "date_range": {
         "start": null,
         "end": null
       },
+      "status": "Active",
       "text": null,
       "product": {
         "name": "Clopidogrel 75 MG oral tablet",
@@ -699,10 +751,14 @@
       }
     },
     {
+      "reference": "Pntr to Section text",
+      "reference_title": "This is the text of the Patient Instruction coded in this Act. Note that this instruction is printed in the narrative text of the parent Section and is refereced by the following pointer to it.\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_sig": null,
       "date_range": {
-        "start": "11/21/2007",
+        "start": "2007-11-21T00:00:00.000Z",
         "end": null
       },
+      "status": "Active",
       "text": null,
       "product": {
         "name": "Metoprolol 25 MG oral tablet",
@@ -763,10 +819,14 @@
       }
     },
     {
+      "reference": null,
+      "reference_title": null,
+      "reference_sig": null,
       "date_range": {
-        "start": "03/28/2000",
+        "start": "2000-03-28T00:00:00.000Z",
         "end": null
       },
+      "status": "Active",
       "text": null,
       "product": {
         "name": "Prednisone 20 MG oral tablet",
@@ -827,10 +887,14 @@
       }
     },
     {
+      "reference": null,
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_sig": null,
       "date_range": {
-        "start": "03/28/2000",
-        "end": "04/04/2000"
+        "start": "2000-03-28T00:00:00.000Z",
+        "end": "2000-04-04T00:00:00.000Z"
       },
+      "status": "Active",
       "text": null,
       "product": {
         "name": "Cephalexin 500 MG oral tablet",
@@ -893,8 +957,10 @@
   ],
   "problems": [
     {
+      "reference": "#CondID-1",
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tAsthma\r\n\t\t\t\t\t\t\t\t\t1950\r\n\t\t\t\t\t\t\t\t\tActive\r\n\t\t\t\t\t\t\t\t",
       "date_range": {
-        "start": "01/01/1950",
+        "start": "1950-01-01T00:00:00.000Z",
         "end": null
       },
       "name": "Asthma",
@@ -912,6 +978,8 @@
       "comment": null
     },
     {
+      "reference": "#CondID-2",
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
       "date_range": {
         "start": null,
         "end": null
@@ -931,6 +999,8 @@
       "comment": null
     },
     {
+      "reference": "#CondID-3",
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tMar 1999\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
       "date_range": {
         "start": null,
         "end": null
@@ -950,6 +1020,8 @@
       "comment": null
     },
     {
+      "reference": "#CondID-4",
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tMyocardial Infarction\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
       "date_range": {
         "start": null,
         "end": null
@@ -969,6 +1041,8 @@
       "comment": null
     },
     {
+      "reference": "#PregInd-1",
+      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPregnancy\r\n\t\t\t\t\t\t\t\t\tDec 9, 2009\r\n\t\t\t\t\t\t\t\t\tNOT currently pregnant\r\n\t\t\t\t\t\t\t\t",
       "date_range": {
         "start": null,
         "end": null
@@ -990,7 +1064,7 @@
   ],
   "procedures": [
     {
-      "date": "01/01/1998",
+      "date": "1998-01-01T00:00:00.000Z",
       "name": "Total hip replacement",
       "code": "52734007",
       "code_system": "2.16.840.1.113883.6.96",
@@ -1000,12 +1074,12 @@
         "code_system": null
       },
       "performer": {
-        "organization": null,
         "street": [],
         "city": null,
         "state": null,
         "zip": null,
         "country": null,
+        "organization": null,
         "phone": null
       },
       "device": {
@@ -1015,9 +1089,16 @@
       }
     }
   ],
+  "smoking_status": {
+    "date": null,
+    "name": null,
+    "code": null,
+    "code_system": null,
+    "code_system_name": null
+  },
   "vitals": [
     {
-      "date": "11/14/1999",
+      "date": "1999-11-14T00:00:00.000Z",
       "results": [
         {
           "name": "Patient Body Height",
@@ -1054,7 +1135,7 @@
       ]
     },
     {
-      "date": "04/07/2000",
+      "date": "2000-04-07T00:00:00.000Z",
       "results": [
         {
           "name": "Patient Body Height",
@@ -1090,12 +1171,5 @@
         }
       ]
     }
-  ],
-  "smoking_status": {
-    "date": null,
-    "name": null,
-    "code": null,
-    "code_system": null,
-    "code_system_name": null
-  }
+  ]
 }
