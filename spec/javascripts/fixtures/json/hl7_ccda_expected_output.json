@@ -1,14 +1,20 @@
 {
+  "type": "ccda",
   "document": {
-    "date": "2005-03-29T12:15:04Z",
+    "custodian": {
+      "name": "Seven"
+    },
+    "date": "2005-03-29T12:15:04.000Z",
     "title": "Good Health Health Summary",
     "author": {
+      "npi": "99999999",
       "name": {
         "prefix": null,
         "given": [
           "Henry"
         ],
-        "family": "Seven"
+        "family": "Seven",
+        "suffix": null
       },
       "address": {
         "street": [
@@ -19,9 +25,12 @@
         "zip": "02368",
         "country": "USA"
       },
-      "phone": {
-        "work": "tel:(555)555-1003"
-      }
+      "phones": [
+        {
+          "type": "work",
+          "number": "tel:(555)555-1003"
+        }
+      ]
     },
     "documentation_of": [
       {
@@ -30,11 +39,15 @@
           "given": [
             "Pseudo"
           ],
-          "family": "Physician-1"
+          "family": "Physician-1",
+          "suffix": null
         },
-        "phone": {
-          "work": "tel:+1-301-975-3251"
-        },
+        "phones": [
+          {
+            "type": "work",
+            "number": "tel:+1-301-975-3251"
+          }
+        ],
         "address": {
           "street": [],
           "city": null,
@@ -49,11 +62,15 @@
           "given": [
             "Pseudo"
           ],
-          "family": "Physician-3"
+          "family": "Physician-3",
+          "suffix": null
         },
-        "phone": {
-          "work": "tel:+1-301-975-3251"
-        },
+        "phones": [
+          {
+            "type": "work",
+            "number": "tel:+1-301-975-3251"
+          }
+        ],
         "address": {
           "street": [],
           "city": null,
@@ -63,6 +80,28 @@
         }
       }
     ],
+    "legal_authenticator": {
+      "date": null,
+      "ids": [],
+      "assigned_person": {
+        "prefix": null,
+        "given": [],
+        "family": null,
+        "suffix": null
+      },
+      "representedOrganization": {
+        "ids": [],
+        "name": null,
+        "phones": [],
+        "address": {
+          "street": [],
+          "city": null,
+          "state": null,
+          "zip": null,
+          "country": null
+        }
+      }
+    },
     "location": {
       "name": null,
       "address": {
@@ -78,13 +117,13 @@
   "allergies": [
     {
       "date_range": {
-        "start": "09/02/2009",
-        "end": "01/03/2010"
+        "start": "2009-09-02T00:00:00.000Z",
+        "end": "2010-01-03T00:00:00.000Z"
       },
-      "name": "drug allergy",
-      "code": "416098002",
-      "code_system": "2.16.840.1.113883.6.96",
-      "code_system_name": "SNOMED CT",
+      "name": null,
+      "code": "ASSERTION",
+      "code_system": "2.16.840.1.113883.5.4",
+      "code_system_name": null,
       "status": "Active",
       "severity": "Moderate to severe",
       "reaction": {
@@ -107,13 +146,13 @@
     },
     {
       "date_range": {
-        "start": "09/02/2009",
-        "end": "01/03/2010"
+        "start": "2009-09-02T00:00:00.000Z",
+        "end": "2010-01-03T00:00:00.000Z"
       },
-      "name": "drug allergy",
-      "code": "416098002",
-      "code_system": "2.16.840.1.113883.6.96",
-      "code_system_name": "SNOMED CT",
+      "name": null,
+      "code": "ASSERTION",
+      "code_system": "2.16.840.1.113883.5.4",
+      "code_system_name": null,
       "status": "Active",
       "severity": "Moderate to severe",
       "reaction": {
@@ -136,13 +175,13 @@
     },
     {
       "date_range": {
-        "start": "09/02/2009",
-        "end": "01/03/2010"
+        "start": "2009-09-02T00:00:00.000Z",
+        "end": "2010-01-03T00:00:00.000Z"
       },
-      "name": "drug allergy",
-      "code": "416098002",
-      "code_system": "2.16.840.1.113883.6.96",
-      "code_system_name": "SNOMED CT",
+      "name": null,
+      "code": "ASSERTION",
+      "code_system": "2.16.840.1.113883.5.4",
+      "code_system_name": null,
       "status": "Active",
       "severity": "Moderate to severe",
       "reaction": {
@@ -204,10 +243,12 @@
         "Adam",
         "Frankie"
       ],
-      "family": "Everyman"
+      "family": "Everyman",
+      "suffix": null
     },
-    "dob": "11/25/1954",
+    "dob": "1954-11-25T00:00:00.000Z",
     "gender": "male",
+    "mrn_number": "12345",
     "marital_status": "married",
     "address": {
       "street": [
@@ -222,14 +263,6 @@
       {
         "type": "home",
         "number": "tel:(781)555-1212"
-      },
-      {
-        "type": "mobile",
-        "number": null
-      },
-      {
-        "type": "work",
-        "number": null
       }
     ],
     "email": null,
@@ -264,9 +297,22 @@
         "home": "tel:(781)555-1212"
       }
     },
+    "patient_contacts": [],
     "provider": {
+      "ids": [
+        {
+          "extension": null,
+          "root": "2.16.840.1.113883.19",
+          "assigningAuthorityName": null
+        }
+      ],
       "organization": "Good Health Clinic",
-      "phone": "tel:(781)555-1212",
+      "phones": [
+        {
+          "type": "work",
+          "number": "tel:(781)555-1212"
+        }
+      ],
       "address": {
         "street": [
           "21 North Ave"
@@ -280,7 +326,7 @@
   },
   "encounters": [
     {
-      "date": "04/07/2000",
+      "date": "2000-04-07T00:00:00.000Z",
       "name": "Office consultation - 15 minutes",
       "code": "99241",
       "code_system": "2.16.840.1.113883.6.12",
@@ -300,27 +346,32 @@
         "code_system_name": "HL7 ActEncounterCode"
       },
       "performer": {
+        "ids": [
+          {
+            "extension": null,
+            "root": null,
+            "assigningAuthorityName": null
+          }
+        ],
         "name": "General Physician",
         "code": "59058001",
         "code_system": "2.16.840.1.113883.6.96",
         "code_system_name": "SNOMED CT"
       },
       "location": {
-        "street": [
-          "17 Daws Rd."
-        ],
-        "city": "Blue Bell",
-        "state": "MA",
-        "zip": "02368",
-        "country": "US",
-        "organization": "General Acute Care Hospital"
+        "street": [],
+        "city": null,
+        "state": null,
+        "zip": null,
+        "country": null,
+        "organization": null
       }
     }
   ],
   "functional_statuses": [],
   "immunizations": [
     {
-      "date": "11/01/1999",
+      "date": "1999-11-01T00:00:00.000Z",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -353,7 +404,7 @@
       }
     },
     {
-      "date": "12/15/1998",
+      "date": "1998-12-15T00:00:00.000Z",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -386,7 +437,7 @@
       }
     },
     {
-      "date": "12/15/1998",
+      "date": "1998-12-15T00:00:00.000Z",
       "product": {
         "name": "Pneumococcal polysaccharide vaccine",
         "code": "33",
@@ -419,7 +470,7 @@
       }
     },
     {
-      "date": "12/15/1998",
+      "date": "1998-12-15T00:00:00.000Z",
       "product": {
         "name": "Tetanus and diphtheria toxoids - preservative free",
         "code": "103",
@@ -452,7 +503,6 @@
       }
     }
   ],
-  "immunization_declines": [],
   "instructions": [],
   "results": [
     {
@@ -462,7 +512,7 @@
       "code_system_name": "SNOMED CT",
       "tests": [
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "HGB",
           "value": 13.2,
           "unit": "g/dl",
@@ -484,7 +534,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "WBC",
           "value": 6.7,
           "unit": "10+3/ul",
@@ -506,7 +556,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00Z",
+          "date": "2000-03-23T14:30:00.000Z",
           "name": "PLT",
           "value": 123,
           "unit": "10+3/ul",
@@ -532,16 +582,20 @@
   ],
   "medications": [
     {
+      "reference": null,
+      "reference_title": "0.09 MG/ACTUAT inhalant solution, 2 puffs QID PRN wheezing",
+      "reference_sig": null,
       "date_range": {
-        "start": "03/01/2011",
-        "end": "03/01/2012"
+        "start": "2011-03-01T00:00:00.000Z",
+        "end": "2012-03-01T00:00:00.000Z"
       },
+      "status": "Bronchitis",
       "text": "0.09 MG/ACTUAT inhalant solution, 2 puffs QID PRN wheezing",
       "product": {
         "name": "Albuterol 0.09 MG/ACTUAT inhalant solution",
-        "text": null,
         "code": "329498",
         "code_system": "2.16.840.1.113883.6.88",
+        "text": null,
         "translation": {
           "name": "Proventil 0.09 MG/ACTUAT inhalant solution",
           "code": "573621",
@@ -591,16 +645,18 @@
         "code_system_name": "NCI Thesaurus"
       },
       "prescriber": {
-        "organization": "Good Health Clinic",
+        "organization": null,
         "person": null
       }
     }
   ],
   "problems": [
     {
+      "reference": null,
+      "reference_title": null,
       "date_range": {
-        "start": "03/01/1998",
-        "end": "01/03/2011"
+        "start": "1998-03-01T00:00:00.000Z",
+        "end": "2011-01-03T00:00:00.000Z"
       },
       "name": "Pneumonia",
       "status": "Active",
@@ -619,34 +675,7 @@
   ],
   "procedures": [
     {
-      "date": "02/15/2011",
-      "name": "Colonic polypectomy",
-      "code": "274025005",
-      "code_system": "2.16.840.1.113883.6.96",
-      "specimen": {
-        "name": "colonic polyp sample",
-        "code": "309226005",
-        "code_system": "2.16.840.1.113883.6.96"
-      },
-      "performer": {
-        "street": [
-          "17 Daws Rd."
-        ],
-        "city": "Blue Bell",
-        "state": "MA",
-        "zip": "02368",
-        "country": "US",
-        "organization": null,
-        "phone": null
-      },
-      "device": {
-        "name": "Colonoscope",
-        "code": "90412006",
-        "code_system": "2.16.840.1.113883.6.96"
-      }
-    },
-    {
-      "date": "02/03/2011",
+      "date": "2011-02-15T00:00:00.000Z",
       "name": "Colonic polypectomy",
       "code": "274025005",
       "code_system": "2.16.840.1.113883.6.96",
@@ -656,13 +685,11 @@
         "code_system": null
       },
       "performer": {
-        "street": [
-          "17 Daws Rd."
-        ],
-        "city": "Blue Bell",
-        "state": "MA",
-        "zip": "02368",
-        "country": "US",
+        "street": [],
+        "city": null,
+        "state": null,
+        "zip": null,
+        "country": null,
         "organization": null,
         "phone": null
       },
@@ -673,7 +700,7 @@
       }
     },
     {
-      "date": "02/03/2011",
+      "date": "2011-02-03T00:00:00.000Z",
       "name": "Colonic polypectomy",
       "code": "274025005",
       "code_system": "2.16.840.1.113883.6.96",
@@ -683,13 +710,36 @@
         "code_system": null
       },
       "performer": {
-        "street": [
-          "17 Daws Rd."
-        ],
-        "city": "Blue Bell",
-        "state": "MA",
-        "zip": "02368",
-        "country": "US",
+        "street": [],
+        "city": null,
+        "state": null,
+        "zip": null,
+        "country": null,
+        "organization": null,
+        "phone": null
+      },
+      "device": {
+        "name": null,
+        "code": null,
+        "code_system": null
+      }
+    },
+    {
+      "date": "2011-02-03T00:00:00.000Z",
+      "name": "Colonic polypectomy",
+      "code": "274025005",
+      "code_system": "2.16.840.1.113883.6.96",
+      "specimen": {
+        "name": null,
+        "code": null,
+        "code_system": null
+      },
+      "performer": {
+        "street": [],
+        "city": null,
+        "state": null,
+        "zip": null,
+        "country": null,
         "organization": null,
         "phone": null
       },
@@ -709,7 +759,7 @@
   },
   "vitals": [
     {
-      "date": "11/14/1999",
+      "date": "1999-11-14T00:00:00.000Z",
       "results": [
         {
           "name": "Height",
@@ -738,7 +788,7 @@
       ]
     },
     {
-      "date": "04/07/2000",
+      "date": "2000-04-07T00:00:00.000Z",
       "results": [
         {
           "name": "Height",
