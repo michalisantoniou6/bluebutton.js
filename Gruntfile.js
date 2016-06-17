@@ -59,6 +59,7 @@ module.exports = function (grunt) {
                     "<%= bb.src %>/parsers/c32/immunizations.js",
                     "<%= bb.src %>/parsers/c32/results.js",
                     "<%= bb.src %>/parsers/c32/medications.js",
+                    "<%= bb.src %>/parsers/c32/payers.js",
                     "<%= bb.src %>/parsers/c32/problems.js",
                     "<%= bb.src %>/parsers/c32/procedures.js",
                     "<%= bb.src %>/parsers/c32/vitals.js",
