@@ -101,14 +101,6 @@ module.exports = function (grunt) {
                     expand: false
                 }]
             },
-            //copyToApi: {
-            //    files: [{
-            //        cwd: ".",
-            //        src: "<%= bb.build %>/bluebutton.js",
-            //        dest: "../cpm-api/resources/assets/js/ccd/parser/bluebutton.min.js",
-            //        expand: false
-            //    }]
-            //},
             copyToNodeCCDParser: {
                 files: [{
                     cwd: ".",
