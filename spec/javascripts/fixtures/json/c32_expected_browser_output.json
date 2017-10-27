@@ -302,7 +302,7 @@
   },
   "encounters": [
     {
-      "date": "2000-04-07T00:00:00.000Z",
+      "date": "04/07/2000",
       "name": "Office consultation - 15 minutes",
       "code": "99241",
       "code_system": "2.16.840.1.113883.6.12",
