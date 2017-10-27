@@ -4,7 +4,7 @@
     "custodian": {
       "name": "NIST Registry"
     },
-    "date": "2009-11-10T13:09:45.000Z",
+    "date": "2009-11-10T13:09:45Z",
     "title": "Example Healthcare Record",
     "author": {
       "npi": null,
@@ -30,6 +30,7 @@
     },
     "documentation_of": [
       {
+        "provider_id": null,
         "npi": "PseudoMD-1",
         "name": {
           "prefix": "Dr.",
@@ -54,6 +55,7 @@
         }
       },
       {
+        "provider_id": null,
         "npi": "PseudoMD-3",
         "name": {
           "prefix": "Dr.",
