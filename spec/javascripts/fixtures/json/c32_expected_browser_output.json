@@ -217,7 +217,7 @@
       "family": "LastName",
       "suffix": null
     },
-    "dob": "1984-07-04T00:00:00.000Z",
+    "dob": "07/04/1984",
     "gender": "female",
     "mrn_number": "PatientID",
     "marital_status": "single",
