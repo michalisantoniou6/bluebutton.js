@@ -961,9 +961,9 @@
   "problems": [
     {
       "reference": "#CondID-1",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tAsthma\r\n\t\t\t\t\t\t\t\t\t1950\r\n\t\t\t\t\t\t\t\t\tActive\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Asthma\r\n\t\t\t\t\t\t\t\t\t1950\r\n\t\t\t\t\t\t\t\t\tActive",
       "date_range": {
-        "start": "1950-01-01T00:00:00.000Z",
+        "start": "01/01/1950",
         "end": null
       },
       "name": "Asthma",
@@ -972,17 +972,12 @@
       "code": "195967001",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-2",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pneumonia\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -993,17 +988,12 @@
       "code": "233604007",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-3",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tMar 1999\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pneumonia\r\n\t\t\t\t\t\t\t\t\tMar 1999\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -1014,17 +1004,12 @@
       "code": "233604007",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-4",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tMyocardial Infarction\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Myocardial Infarction\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -1035,17 +1020,12 @@
       "code": "22298006",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#PregInd-1",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPregnancy\r\n\t\t\t\t\t\t\t\t\tDec 9, 2009\r\n\t\t\t\t\t\t\t\t\tNOT currently pregnant\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pregnancy\r\n\t\t\t\t\t\t\t\t\tDec 9, 2009\r\n\t\t\t\t\t\t\t\t\tNOT currently pregnant",
       "date_range": {
         "start": null,
         "end": null
@@ -1056,12 +1036,7 @@
       "code": "77386006",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     }
   ],
