@@ -621,7 +621,7 @@
       "reference_title": null,
       "reference_sig": null,
       "date_range": {
-        "start": "2005-01-01T00:00:00Z",
+        "start": "01/01/2005",
         "end": null
       },
       "status": "Active",
@@ -754,10 +754,10 @@
     },
     {
       "reference": "Pntr to Section text",
-      "reference_title": "This is the text of the Patient Instruction coded in this Act. Note that this instruction is printed in the narrative text of the parent Section and is refereced by the following pointer to it.\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_title": "This is the text of the Patient Instruction coded in this Act. Note that this instruction is printed in the narrative text of the parent Section and is refereced by the following pointer to it.",
       "reference_sig": null,
       "date_range": {
-        "start": "2007-11-21T00:00:00.000Z",
+        "start": "11/21/2007",
         "end": null
       },
       "status": "Active",
@@ -825,7 +825,7 @@
       "reference_title": null,
       "reference_sig": null,
       "date_range": {
-        "start": "2000-03-28T00:00:00.000Z",
+        "start": "03/28/2000",
         "end": null
       },
       "status": "Active",
@@ -890,11 +890,11 @@
     },
     {
       "reference": null,
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_title": "",
       "reference_sig": null,
       "date_range": {
-        "start": "2000-03-28T00:00:00.000Z",
-        "end": "2000-04-04T00:00:00.000Z"
+        "start": "03/28/2000",
+        "end": "04/04/2000"
       },
       "status": "Active",
       "text": null,
