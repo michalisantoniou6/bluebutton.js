@@ -60,6 +60,7 @@ module.exports = function (grunt) {
                     "<%= bb.src %>/parsers/c32/immunizations.js",
                     "<%= bb.src %>/parsers/c32/results.js",
                     "<%= bb.src %>/parsers/c32/medications.js",
+                    "<%= bb.src %>/parsers/c32/payers.js",
                     "<%= bb.src %>/parsers/c32/problems.js",
                     "<%= bb.src %>/parsers/c32/procedures.js",
                     "<%= bb.src %>/parsers/c32/vitals.js",
@@ -76,6 +77,7 @@ module.exports = function (grunt) {
                     "<%= bb.src %>/parsers/ccda/instructions.js",
                     "<%= bb.src %>/parsers/ccda/results.js",
                     "<%= bb.src %>/parsers/ccda/medications.js",
+                    "<%= bb.src %>/parsers/ccda/payers.js",
                     "<%= bb.src %>/parsers/ccda/problems.js",
                     "<%= bb.src %>/parsers/ccda/procedures.js",
                     "<%= bb.src %>/parsers/ccda/smoking_status.js",
@@ -100,14 +102,6 @@ module.exports = function (grunt) {
                     expand: false
                 }]
             },
-            //copyToApi: {
-            //    files: [{
-            //        cwd: ".",
-            //        src: "<%= bb.build %>/bluebutton.js",
-            //        dest: "../cpm-api/resources/assets/js/ccd/parser/bluebutton.min.js",
-            //        expand: false
-            //    }]
-            //},
             copyToNodeCCDParser: {
                 files: [{
                     cwd: ".",
