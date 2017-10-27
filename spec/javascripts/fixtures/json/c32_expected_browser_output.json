@@ -341,7 +341,7 @@
   "functional_statuses": [],
   "immunizations": [
     {
-      "date": "1999-11-01T00:00:00.000Z",
+      "date": "11/01/1999",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -374,7 +374,7 @@
       }
     },
     {
-      "date": "1998-12-15T00:00:00.000Z",
+      "date": "12/15/1998",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -407,7 +407,7 @@
       }
     },
     {
-      "date": "1998-12-15T00:00:00.000Z",
+      "date": "12/15/1998",
       "product": {
         "name": "Pneumococcal polysaccharide vaccine",
         "code": "33",
