@@ -1042,7 +1042,7 @@
   ],
   "procedures": [
     {
-      "date": "1998-01-01T00:00:00.000Z",
+      "date": "01/01/1998",
       "name": "Total hip replacement",
       "code": "52734007",
       "code_system": "2.16.840.1.113883.6.96",
@@ -1076,7 +1076,7 @@
   },
   "vitals": [
     {
-      "date": "1999-11-14T00:00:00.000Z",
+      "date": "11/14/1999",
       "results": [
         {
           "name": "Patient Body Height",
@@ -1113,7 +1113,7 @@
       ]
     },
     {
-      "date": "2000-04-07T00:00:00.000Z",
+      "date": "04/07/2000",
       "results": [
         {
           "name": "Patient Body Height",
