@@ -340,6 +340,41 @@
     }
   ],
   "functional_statuses": [],
+  "immunization_declines": [
+    {
+      "date": "08/15/1997",
+      "product": {
+        "name": "Tetanus and diphtheria toxoids",
+        "code": "09",
+        "code_system": "2.16.840.1.113883.6.59",
+        "code_system_name": "CVX",
+        "translation": {
+          "name": "Tetanus and diphtheria toxoids - preservative free",
+          "code": "113",
+          "code_system": "2.16.840.1.113883.6.59",
+          "code_system_name": "CVX"
+        },
+        "lot_number": "Required-if-Known text to identifyor describe the Immunization Lot Number.",
+        "manufacturer_name": null
+      },
+      "dose_quantity": {
+        "value": null,
+        "unit": null
+      },
+      "route": {
+        "name": "Intramuscular injection",
+        "code": "IM",
+        "code_system": "2.16.840.1.113883.5.112",
+        "code_system_name": "RouteOfAdministration"
+      },
+      "instructions": null,
+      "education_type": {
+        "name": null,
+        "code": null,
+        "code_system": null
+      }
+    }
+  ],
   "immunizations": [
     {
       "date": "11/01/1999",
