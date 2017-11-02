@@ -6,4 +6,3 @@ tmp/
 *.DS_Store
 *.log
 .idea/
-Gruntfile.js
