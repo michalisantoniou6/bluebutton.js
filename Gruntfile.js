@@ -80,7 +80,7 @@ module.exports = function (grunt) {
                     "<%= bb.src %>/parsers/ccda/payers.js",
                     "<%= bb.src %>/parsers/ccda/problems.js",
                     // "<%= bb.src %>/parsers/ccda/procedures.js",
-                    "<%= bb.src %>/parsers/ccda/smoking_status.js",
+                    // "<%= bb.src %>/parsers/ccda/smoking_status.js",
                     "<%= bb.src %>/parsers/ccda/vitals.js",
 
                     "<%= bb.src %>/renderers.js",
