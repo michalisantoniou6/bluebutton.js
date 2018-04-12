@@ -4,7 +4,7 @@
     "custodian": {
       "name": "NIST Registry"
     },
-    "date": "2009-11-10T13:09:45.000Z",
+    "date": "2009-11-10T13:09:45Z",
     "title": "Example Healthcare Record",
     "author": {
       "npi": null,
@@ -30,6 +30,7 @@
     },
     "documentation_of": [
       {
+        "provider_id": null,
         "npi": "PseudoMD-1",
         "name": {
           "prefix": "Dr.",
@@ -54,6 +55,7 @@
         }
       },
       {
+        "provider_id": null,
         "npi": "PseudoMD-3",
         "name": {
           "prefix": "Dr.",
@@ -206,6 +208,7 @@
     "text": null
   },
   "demographics": {
+    "ids": [],
     "name": {
       "prefix": null,
       "given": [
@@ -215,7 +218,7 @@
       "family": "LastName",
       "suffix": null
     },
-    "dob": "1984-07-04T00:00:00.000Z",
+    "dob": "07/04/1984",
     "gender": "female",
     "mrn_number": "PatientID",
     "marital_status": "single",
@@ -300,7 +303,7 @@
   },
   "encounters": [
     {
-      "date": "2000-04-07T00:00:00.000Z",
+      "date": "04/07/2000",
       "name": "Office consultation - 15 minutes",
       "code": "99241",
       "code_system": "2.16.840.1.113883.6.12",
@@ -337,9 +340,44 @@
     }
   ],
   "functional_statuses": [],
+  "immunization_declines": [
+    {
+      "date": "08/15/1997",
+      "product": {
+        "name": "Tetanus and diphtheria toxoids",
+        "code": "09",
+        "code_system": "2.16.840.1.113883.6.59",
+        "code_system_name": "CVX",
+        "translation": {
+          "name": "Tetanus and diphtheria toxoids - preservative free",
+          "code": "113",
+          "code_system": "2.16.840.1.113883.6.59",
+          "code_system_name": "CVX"
+        },
+        "lot_number": "Required-if-Known text to identifyor describe the Immunization Lot Number.",
+        "manufacturer_name": null
+      },
+      "dose_quantity": {
+        "value": null,
+        "unit": null
+      },
+      "route": {
+        "name": "Intramuscular injection",
+        "code": "IM",
+        "code_system": "2.16.840.1.113883.5.112",
+        "code_system_name": "RouteOfAdministration"
+      },
+      "instructions": null,
+      "education_type": {
+        "name": null,
+        "code": null,
+        "code_system": null
+      }
+    }
+  ],
   "immunizations": [
     {
-      "date": "1999-11-01T00:00:00.000Z",
+      "date": "11/01/1999",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -372,7 +410,7 @@
       }
     },
     {
-      "date": "1998-12-15T00:00:00.000Z",
+      "date": "12/15/1998",
       "product": {
         "name": "Influenza virus vaccine",
         "code": "88",
@@ -405,7 +443,7 @@
       }
     },
     {
-      "date": "1998-12-15T00:00:00.000Z",
+      "date": "12/15/1998",
       "product": {
         "name": "Pneumococcal polysaccharide vaccine",
         "code": "33",
@@ -445,10 +483,10 @@
       "code": "43789009",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": null,
-      "date": "2000-03-23T14:30:00.000Z",
+      "date": "2000-03-23T14:30:00Z",
       "tests": [
         {
-          "date": "2000-03-23T14:30:00.000Z",
+          "date": "2000-03-23T14:30:00Z",
           "name": "HGB",
           "value": 13.2,
           "unit": "g/dl",
@@ -470,7 +508,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00.000Z",
+          "date": "2000-03-23T14:30:00Z",
           "name": "WBC",
           "value": 6.7,
           "unit": "10+3/ul",
@@ -492,7 +530,7 @@
           }
         },
         {
-          "date": "2000-03-23T14:30:00.000Z",
+          "date": "2000-03-23T14:30:00Z",
           "name": "PLT",
           "value": 123,
           "unit": "10+3/ul",
@@ -520,10 +558,10 @@
       "code": "20109005",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED CT",
-      "date": "2000-04-06T13:00:00.000Z",
+      "date": "2000-04-06T13:00:00Z",
       "tests": [
         {
-          "date": "2000-04-06T13:00:00.000Z",
+          "date": "2000-04-06T13:00:00Z",
           "name": "NA",
           "value": 140,
           "unit": "meq/l",
@@ -545,7 +583,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00.000Z",
+          "date": "2000-04-06T13:00:00Z",
           "name": "K",
           "value": 4,
           "unit": "meq/l",
@@ -567,7 +605,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00.000Z",
+          "date": "2000-04-06T13:00:00Z",
           "name": "CL",
           "value": 102,
           "unit": "meq/l",
@@ -589,7 +627,7 @@
           }
         },
         {
-          "date": "2000-04-06T13:00:00.000Z",
+          "date": "2000-04-06T13:00:00Z",
           "name": "HCO3",
           "value": 35,
           "unit": "meq/l",
@@ -619,7 +657,7 @@
       "reference_title": null,
       "reference_sig": null,
       "date_range": {
-        "start": "2005-01-01T00:00:00.000Z",
+        "start": "01/01/2005",
         "end": null
       },
       "status": "Active",
@@ -752,10 +790,10 @@
     },
     {
       "reference": "Pntr to Section text",
-      "reference_title": "This is the text of the Patient Instruction coded in this Act. Note that this instruction is printed in the narrative text of the parent Section and is refereced by the following pointer to it.\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_title": "This is the text of the Patient Instruction coded in this Act. Note that this instruction is printed in the narrative text of the parent Section and is refereced by the following pointer to it.",
       "reference_sig": null,
       "date_range": {
-        "start": "2007-11-21T00:00:00.000Z",
+        "start": "11/21/2007",
         "end": null
       },
       "status": "Active",
@@ -823,7 +861,7 @@
       "reference_title": null,
       "reference_sig": null,
       "date_range": {
-        "start": "2000-03-28T00:00:00.000Z",
+        "start": "03/28/2000",
         "end": null
       },
       "status": "Active",
@@ -888,11 +926,11 @@
     },
     {
       "reference": null,
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t\t\t",
+      "reference_title": "",
       "reference_sig": null,
       "date_range": {
-        "start": "2000-03-28T00:00:00.000Z",
-        "end": "2000-04-04T00:00:00.000Z"
+        "start": "03/28/2000",
+        "end": "04/04/2000"
       },
       "status": "Active",
       "text": null,
@@ -958,9 +996,9 @@
   "problems": [
     {
       "reference": "#CondID-1",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tAsthma\r\n\t\t\t\t\t\t\t\t\t1950\r\n\t\t\t\t\t\t\t\t\tActive\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Asthma\r\n\t\t\t\t\t\t\t\t\t1950\r\n\t\t\t\t\t\t\t\t\tActive",
       "date_range": {
-        "start": "1950-01-01T00:00:00.000Z",
+        "start": "01/01/1950",
         "end": null
       },
       "name": "Asthma",
@@ -969,17 +1007,12 @@
       "code": "195967001",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-2",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pneumonia\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -990,17 +1023,12 @@
       "code": "233604007",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-3",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPneumonia\r\n\t\t\t\t\t\t\t\t\tMar 1999\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pneumonia\r\n\t\t\t\t\t\t\t\t\tMar 1999\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -1011,17 +1039,12 @@
       "code": "233604007",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#CondID-4",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tMyocardial Infarction\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Myocardial Infarction\r\n\t\t\t\t\t\t\t\t\tJan 1997\r\n\t\t\t\t\t\t\t\t\tResolved",
       "date_range": {
         "start": null,
         "end": null
@@ -1032,17 +1055,12 @@
       "code": "22298006",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     },
     {
       "reference": "#PregInd-1",
-      "reference_title": "\r\n\t\t\t\t\t\t\t\t\tPregnancy\r\n\t\t\t\t\t\t\t\t\tDec 9, 2009\r\n\t\t\t\t\t\t\t\t\tNOT currently pregnant\r\n\t\t\t\t\t\t\t\t",
+      "reference_title": "Pregnancy\r\n\t\t\t\t\t\t\t\t\tDec 9, 2009\r\n\t\t\t\t\t\t\t\t\tNOT currently pregnant",
       "date_range": {
         "start": null,
         "end": null
@@ -1053,18 +1071,13 @@
       "code": "77386006",
       "code_system": "2.16.840.1.113883.6.96",
       "code_system_name": "SNOMED",
-      "translation": {
-        "name": null,
-        "code": null,
-        "code_system": null,
-        "code_system_name": null
-      },
+      "translations": [],
       "comment": null
     }
   ],
   "procedures": [
     {
-      "date": "1998-01-01T00:00:00.000Z",
+      "date": "01/01/1998",
       "name": "Total hip replacement",
       "code": "52734007",
       "code_system": "2.16.840.1.113883.6.96",
@@ -1098,7 +1111,7 @@
   },
   "vitals": [
     {
-      "date": "1999-11-14T00:00:00.000Z",
+      "date": "11/14/1999",
       "results": [
         {
           "name": "Patient Body Height",
@@ -1135,7 +1148,7 @@
       ]
     },
     {
-      "date": "2000-04-07T00:00:00.000Z",
+      "date": "04/07/2000",
       "results": [
         {
           "name": "Patient Body Height",
