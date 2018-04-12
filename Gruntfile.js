@@ -106,7 +106,7 @@ module.exports = function (grunt) {
                 files: [{
                     cwd: ".",
                     src: "<%= bb.build %>/bluebutton.min.js",
-                    dest: "../cpm-ccda-parser/api/services/ccd-parser/cpm-ccd-parser.min.js",
+                    dest: "../ccda-parser-lite/services/blue-button.js",
                     expand: false
                 }]
             }
